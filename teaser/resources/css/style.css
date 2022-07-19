@@ -51,10 +51,10 @@ button:focus{outline:dashed #666 thin;}
 
 
 /* cont */
-.hunt_bg{position: relative; background: url('../images/bg.jpg')no-repeat ; width: 720px; height: 2195px; overflow: hidden;}
+.hunt_bg{position: relative; background: url('../images/bg.jpg')no-repeat ; width: 720px; height: 2400px; overflow: hidden;}
 .hunt_bg .title{position: absolute; top: 207px; left: 27px; width: 670px; height: 283px;}
 .hunt_bg .text02{position: absolute; top: 550px; left: 16.5px; width: 687px; height: 214px;}
 .hunt_bg .text03{position: absolute; top: 750px; left: 65.5px; width: 589px; height: 82px;}
-.hunt_bg .cont_box{position: absolute; top: 935px; left: 45px; width: 624px; height: 675px; border: 3px groove #969696; box-shadow: 0 20px 30px #000;}
-.hunt_bg .hunt_yt{padding-top: 1714px; padding-left: 40px; width: 640px; height: 360px;}
+.hunt_bg .cont_box{position: absolute; top: 935px; left: 45px; width: 624px; height: 855px; border: 3px groove #969696; box-shadow: 0 20px 30px #000;}
+.hunt_bg .hunt_yt{padding-top: 1915px; padding-left: 40px; width: 640px; height: 360px;}
 .hunt_bg .hunt_yt iframe{width: 100%; height: 100%;}
