@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=720, target-densitydpi=device-dpi, user-scalable=yes">
+	<meta name="viewport" content="width=720, target-densitydpi=device-dpi">
 	<!-- meta -->
 	<meta property="og:url" content="http://cash2022.kr/">
 	<meta property="og:title" content="보물찾기">
@@ -58,7 +58,7 @@
 						<div class="front"></div>
 						<div class="back"></div>
 					</div>
-					<div class="card card3">
+					<div class="card_end card3">
 						<div class="front"></div>
 						<div class="back"></div>
 					</div>
@@ -71,11 +71,15 @@
 			<div class="hint_txt">
 				<div class="txt">
 					<img src="./resources/images/key_icon.png" alt="">
-					<p>열쇠가 숨겨져 있는 곳은 <b>총4곳</b></p>
+					<p>열쇠가 숨겨져 있는 곳은 <b>총3곳</b></p>
 				</div>
 				<div class="txt">
 					<img src="./resources/images/key_icon.png" alt="">
 					<p><b>한 개의 단서</b>는 <b>한 개의 장소</b>를 가리키고 있다</p>
+				</div>
+				<div class="txt">
+					<img src="./resources/images/key_icon.png" alt="">
+					<p>참가 지원 시, 획득한 <b>실물 열쇠 카드 지참</b> 필수</p>
 				</div>
 			</div>
 		</div>
@@ -104,7 +108,7 @@
 						<div class="step">
 							<img src="./resources/images/how_step02.png" alt="">
 						</div>
-						<p>해당 장소에 숨겨진 열쇠가<br>그려져 있는 카드를 찾는다.</p>
+						<p>해당 장소에 직접 가서<br>숨겨진 열쇠가 그려져<br>있는 카드를 찾는다.</p>
 					</div>
 				</div>
 				<!-- step2 -->
@@ -150,10 +154,10 @@
 				<img src="./resources/images/clue02.jpg" alt="">
 				<p>각 <span>단서</span>는 서울 시내 특정 <span>장소</span>를 가리킵니다.<br>단서의 비밀을 풀고 해당 장소에 가서 열쇠가<br>그려진 카드를 찾으세요!</p>
 			</div>
-			<div class="card_pop_cont popup03">
+			<!-- <div class="card_pop_cont popup03">
 				<img src="./resources/images/clue03.jpg" alt="">
 				<p>각 <span>단서</span>는 서울 시내 특정 <span>장소</span>를 가리킵니다.<br>단서의 비밀을 풀고 해당 장소에 가서 열쇠가<br>그려진 카드를 찾으세요!</p>
-			</div>
+			</div> -->
 			<div class="card_pop_cont popup04">
 				<img src="./resources/images/clue04.jpg" alt="">
 				<p>각 <span>단서</span>는 서울 시내 특정 <span>장소</span>를 가리킵니다.<br>단서의 비밀을 풀고 해당 장소에 가서 열쇠가<br>그려진 카드를 찾으세요!</p>
@@ -177,13 +181,13 @@
 	// 	$(".pop_bg").hide();
 	// });
 
-	$(".card_cont>div").on("click",function(){
+	$(".card_cont>div.card").on("click",function(){
 		setTimeout(function(){
 			$(".pop_bg").fadeToggle();
 		},700);
-		var card_idx = $(".card_cont>div").index(this);
-		$(".pop_bg > .card_pop > div").stop().fadeOut(500);
-		$(".pop_bg > .card_pop > div").eq(card_idx).stop().fadeIn(500);
+		var card_idx = $(".card_cont>div.card").index(this);
+		$(".pop_bg > .card_pop > div.card_pop_cont").stop().fadeOut(500);
+		$(".pop_bg > .card_pop > div.card_pop_cont").eq(card_idx).stop().fadeIn(500);
 		$('html').addClass("notScroll");
 		return false;
     });
@@ -203,7 +207,7 @@ $(function() {
                 $('.top_btn').fadeOut();
             }
         });
-        
+
         $(".top_btn").click(function() {
             $('html, body').animate({
                 scrollTop : 0
