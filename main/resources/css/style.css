@@ -93,7 +93,7 @@ button:focus{outline:dashed #666 thin;}
 
 
 /* cont */
-.hunt_bg{position: relative; background: url('../images/bg.jpg')no-repeat ; width: 720px; height: 5578px; overflow: hidden;}
+.hunt_bg{position: relative; background: url('../images/bg.jpg')no-repeat ; width: 720px; height: 5648px; overflow: hidden;}
 .hunt_bg .poster{width: 640px; margin: 237px auto 0;}
 /* .hunt_bg .title{position: absolute; top: 207px; left: 27px; width: 670px; height: 283px;} */
 .hunt_bg .text02{position: absolute; top: 1150px; left: 0; width: 720px; height: 432px;}
@@ -102,15 +102,23 @@ button:focus{outline:dashed #666 thin;}
 .hunt_bg .period{position: absolute; top: 2245px; left: 98px; width: 524px; height: 82px;}
 .hunt_bg .hunt_yt{padding-top: 1200px; padding-left: 40px; width: 640px; height: 360px;}
 .hunt_bg .hunt_yt iframe{width: 100%; height: 100%;}
-.hunt_bg .hint_tit{margin: 140px auto 10px; width: 131px; height: 65px;}
+.hunt_bg .hint_tit{margin: 130px auto 10px; width: 131px; height: 65px;}
 .hunt_bg .hint_tit img{filter: drop-shadow(25px 20px 20px #000)}
-.hunt_bg .hint_ex{font-size: 34px; letter-spacing: -0.07em; color: #db1515; font-weight: 300; text-align: center; margin-top: 35px;}
+.hunt_bg .hint_ex{font-size: 34px; letter-spacing: -0.07em; color: #db1515; font-weight: 300; text-align: center; margin-top: 30px;}
 .hunt_bg .hint_ex b{font-weight: bold;}
-.hunt_bg .card_cont{display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+.hunt_bg .card_cont{display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap;}
 .hunt_bg .card{width:244px; height:338px; position:relative; display:inline-block; margin-top: 36px;}
 .hunt_bg .card_end{width:244px; height:338px; position:relative; display:inline-block; margin-top: 36px;}
-.hunt_bg .card:nth-child(2n){margin-left: 50px;}
+.hunt_bg .card_cont>div:nth-child(2n){margin-left: 50px;}
+.hunt_bg .end_immi{margin: 10px auto 0; width: 101px; height: 25px; position: relative;}
+.hunt_bg .end_immi img{
+-webkit-animation:hint 0.7s ease-in-out infinite alternate; -moz-animation:hint 0.7s ease-in-out infinite alternate; animation:hint 0.7s ease-in-out infinite alternate; }
+@-webkit-keyframes hint{ 0% {opacity:0;} 100% {opacity:1;} }
+@-moz-keyframes hint{ 0% {opacity:0;} 100% {opacity:1;} }
+@keyframes hint{ 0% {opacity:0;} 100% {opacity:1;} }
+
 .hunt_bg .card .front{position:absolute; width:244px; height:338px; background: url('../images/hint_card.png'); top:0; left:0;}
+
 /* .hunt_bg .card_end.card1 .front{position:absolute; width:244px; height:338px; background: url('../images/hint_card_end01.png'); top:0; left:0;} */
 /* .hunt_bg .card_end.card2 .front{position:absolute; width:244px; height:338px; background: url('../images/hint_card_end02.png'); top:0; left:0;} */
 .hunt_bg .card_end.card3 .front{position:absolute; width:244px; height:338px; background: url('../images/hint_card_end03.png'); top:0; left:0;}
